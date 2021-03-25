@@ -1,0 +1,18 @@
+.address {
+  padding-top: 20px;
+  min-width: 232px;
+
+  color: var(--white-text-color);
+}
+
+.address__link {
+  display: block;
+  padding-top: 8px;
+  color: var(--address-text-op60);
+
+  text-decoration: none;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 9px;
+  }
+}
