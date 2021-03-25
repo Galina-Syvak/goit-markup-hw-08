@@ -1,6 +1,6 @@
 /* Подпишитесь */
 .subscription {
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .subscription__input {
-  width: 450px;
+  width: 100%;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -25,6 +25,10 @@
   &:focus {
     color: var(--primery-text-color);
     outline: none;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
   }
 
   @media screen and (min-width: $desktop) {
