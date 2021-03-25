@@ -11,8 +11,8 @@
 }
 
 .hero--overlay {
-  height: 400px;
-  max-width: 480px;
+  height: 100%;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
 
@@ -26,6 +26,7 @@
   background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -35,7 +36,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: 768px;
+    width: 768px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -43,6 +44,7 @@
       url(../images/hero/tablet-overlay.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
@@ -54,7 +56,7 @@
 
   @media screen and (min-width: $desktop) {
     height: 600px;
-    max-width: 1600px;
+    width: 1600px;
 
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -63,6 +65,7 @@
       url(../images/hero/overlay.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
