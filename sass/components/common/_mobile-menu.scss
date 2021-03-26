@@ -82,14 +82,19 @@
 
 .menu__network {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
 }
 
 .menu__item-network {
   position: relative;
 
-  &:not(:first-child) {
-    margin-left: 20px;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:nth-child(-n + 2) {
+    margin-bottom: 15px;
   }
 }
 
